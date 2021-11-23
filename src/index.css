@@ -1,13 +1,35 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: cadetblue;
+  padding: 50px 200px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.title-name {
+  text-align: center;
+  line-height: 50px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.profile-image {
+  width: 100px;
+  max-width: 100px;
+  height: 100px;
+  max-height: 100px;
+}
+
+.skills-layout .skills__item {
+  margin-bottom: 10px;
+}
+
+.title-name:hover, .section__title:hover, .position:hover {
+  animation: bounce;
+  animation-duration:2s;
+}
+
+.profile-image > img:hover {
+  display: block;
+  height: 150px;
+  width: 150px;
+  cursor: pointer;
 }
